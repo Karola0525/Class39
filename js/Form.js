@@ -34,8 +34,7 @@ class Form {
       Hola ${this.input.value()}
       </br>Espera a que se una otro jugador...`;
       this.greeting.html(message);
-      //ONCE AUMENTAR PLAYER COUNT CADA VEZ QUE EL MOUSE ES PRESIONADO
-      //IR AL SKETCH
+     
       playerCount+=1;
       player.name = this.input.value();
       player.index = playerCount;
