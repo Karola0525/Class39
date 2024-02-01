@@ -21,14 +21,14 @@ class Player {
       positionY: this.positionY,
     });
   } */
-  //NOVENO LEER LOS DATOS Y GUARDAR LOS VALORES EN PLAYERCOUNT
+ 
   getCount() {
     var playerCountRef = database.ref('playerCount');
     playerCountRef.on("value", data => {
       playerCount = data.val();
     });
   }
-//DECIMO ACTUALIZAR LA BASE DE DATOS E IR A LA CLASE FORM
+
   updateCount(count){
     database.ref('/').update({
       playerCount:count
